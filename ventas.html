@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ventas por Mes</title>
+ 
+    </style>
+    <link href="estilos2.css" rel="stylesheet">
+<header>
+    <a href="#" class="marcaNeomodas">
+                <strong>Neo Modas</strong>  </a>
+    
+</header>
+    <form id="ventasForm">
+        <div><h2>Registro de ventas</h2></div>
+        <label for="enero">Enero:</label>
+        <input type="number" id="enero" min="0" required>
+
+
+        <label for="febrero">Febrero:</label>
+        <input type="number" id="febrero" min="0" required>
+
+
+        <label for="marzo">Marzo:</label>
+        <input type="number" id="marzo" min="0" required>
+
+
+        <label for="abril">Abril:</label>
+        <input type="number" id="abril" min="0" required>
+
+
+        <label for="mayo">Mayo:</label>
+        <input type="number" id="mayo" min="0" required>
+        
+        <label for="junio">Junio:</label>
+        <input type="number" id="junio" min="0" required>
+
+
+        <!-- Agrega más campos para los otros meses -->
+
+
+        <button type="submit">Registrar Ventas</button>
+    </form>
+
+
+    <script>
+        const ventasForm = document.getElementById("ventasForm");
+        ventasForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+
+            // Obtener los valores de los campos
+            const enero = parseFloat(document.getElementById("enero").value);
+            const febrero = parseFloat(document.getElementById("febrero").value);
+            const marzo = parseFloat(document.getElementById("marzo").value);
+            const abril = parseFloat(document.getElementById("abril").value);
+            const mayo = parseFloat(document.getElementById("mayo").value);
+            const junio = parseFloat(document.getElementById("junio").value);
+
+
+            // Calcula el total de ventas por mes
+            const totalVentas = enero + febrero + marzo + abril + mayo + junio;
+
+
+            // Muestra el resultado
+            alert(`Total de ventas del año: $${totalVentas}`);
+        });
+    </script>
+</body>
+</html>
+
+
