@@ -1,0 +1,164 @@
+*
+{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+/* banner superior */
+header
+{   background-color: #252525;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 05px 10px rgba(0, 0, 0, 05);
+}
+.marcaNeomodas
+{   color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.grupo-menu
+{   display: flex;
+    align-items: center;
+}
+header ul
+{   position: relative;
+    display: flex;
+    gap: 30px;
+}
+header ul li
+{   list-style: none;    
+}
+header ul li a
+{   position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: antiquewhite; 
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+header ul button
+{   position: relative;    
+    text-decoration: none;
+    font-size: 1em;
+    color: antiquewhite; 
+    background-color:#1e6330;
+    padding: .3em;
+    margin: 0;
+    border:#467452 3px solid;
+    border-radius:  10px;   
+    text-transform: uppercase; 
+}
+/*main*/
+ .listaproductos{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: aquamarine;
+    gap: 20px;
+}   
+.ropa{
+    border-radius: 10px;
+}
+
+
+.ropa:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.ropa img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+
+.ropa:hover img{
+    transform: scale(1.1);
+}
+.info-prod{
+    padding: 15px 30px;
+    line-height: 2;
+ 
+    flex-direction: column;
+    gap: 10px;
+}
+.info-prod button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+
+.caja{
+    margin: 80px;
+    padding: 30px 30px 80px;
+    content: 50% ;
+    gap: 10px;
+    background-color: aquamarine;  
+    opacity: 70%; 
+    float: left;
+
+}
+
+.fondo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+body{
+    background-image: url(imagenes/fondo2.jpg);
+    background-size: 100%, cover;
+
+}
+.caja h1 {
+    font-size: 80px; height: 100px}
+.caja h2 {
+    font-size:  50px;}
+.caja h3 {
+    font-family:monospace;
+        font-size: 30px;}
+
+.boton {
+            margin:100px;
+            text-decoration: none;
+            background-color: #113d2c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;        }

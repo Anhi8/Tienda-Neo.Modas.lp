@@ -6,14 +6,25 @@
     <title>Formulario de Ventas por Mes</title>
  
     </style>
-    <link href="estilos2.css" rel="stylesheet">
-<header>
-    <a href="#" class="marcaNeomodas">
-                <strong>Neo Modas</strong>  </a>
-    
-</header>
+    <link href="css/estilos2.css" rel="stylesheet">
+        <!--Barra de navegación-->
+        <header>
+            <a href="index.html" class="marcaNeomodas">
+                        <strong>Neo Modas</strong>  </a>
+            <div class="grupo-menu">
+                <ul class="navegacion"> 
+                    <li><a href="catalogo.html">Catàlogo</a></li>                 
+                    <li><a href="contactanos.html">Contacto</a></li>
+                    <li><a href="ventas.html">Ventas</a></li>
+                    <button type="button" class="Whatsapp">Whatsapp</button>
+                </ul>
+                
+            </div>
+            
+        </header>
+<!-- CREACION DEL FORMULARIO-->
     <form id="ventasForm">
-        <div><h2>Registro de ventas</h2></div>
+        <div><h1>REGISTRO DE VENTAS</h1></div>
         <label for="enero">Enero:</label>
         <input type="number" id="enero" min="0" required>
 
@@ -40,33 +51,13 @@
         <!-- Agrega más campos para los otros meses -->
 
 
-        <button type="submit">Registrar Ventas</button>
+        <button type="submit">Calcular Ventas</button>
+       <input type="reset" value="Borrar">
     </form>
 
-
-    <script>
-        const ventasForm = document.getElementById("ventasForm");
-        ventasForm.addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+    <script src="js/myscript.js"></script>
 
 
-            // Obtener los valores de los campos
-            const enero = parseFloat(document.getElementById("enero").value);
-            const febrero = parseFloat(document.getElementById("febrero").value);
-            const marzo = parseFloat(document.getElementById("marzo").value);
-            const abril = parseFloat(document.getElementById("abril").value);
-            const mayo = parseFloat(document.getElementById("mayo").value);
-            const junio = parseFloat(document.getElementById("junio").value);
-
-
-            // Calcula el total de ventas por mes
-            const totalVentas = enero + febrero + marzo + abril + mayo + junio;
-
-
-            // Muestra el resultado
-            alert(`Total de ventas del año: $${totalVentas}`);
-        });
-    </script>
 </body>
 </html>
 
